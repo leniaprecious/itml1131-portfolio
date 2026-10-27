@@ -1,56 +1,69 @@
-aA<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precious Lenia-portifolio</title>
+    <title>Precious Lenia - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<main>
-    <header>
-<h1>Precious Lenia</h1>
-<p>Web Developer &amp; Designer</p> 
-    </header>
-    <section>
+<body>
+    <main>
+        <header>
+            <h1>Precious Lenia</h1>
+            <p>Web Developer &amp; Designer</p>
+            <nav>
+                <a href="https://github.com/leniaprecious/itml1131-portfolio">My GitHub profile</a>
+                <a href="#aboutme">ABOUT ME</a>
+            </nav>
+        </header>
+
+        <section id="aboutme">
             <h2>About Me</h2>
             <p>
-                My name is Precious Lenia. Am currently a year one student pursuing Information Technology at Muni University.I have a strong interest in computers, software and how technology solves every day problems. This website is part of my journey as I learn and grow in the technology field.
-                
+                My name is Precious Lenia. I am currently a year one student pursuing Information Technology at Muni University. I have a strong interest in computers, software and how technology solves every day problems. This website is part of my journey as I learn and grow in the technology field.
             </p>
         </section>
 
         <section>
-        <h2>My Skills</h2>
-        <ul>
-            <li><strong>HTML &amp; CSS </strong><br> Buliding clean, Semantic and responsible websites.</li>
-            <li><strong>Javascript</strong><br> Creating interactive web experience</li>
-            <li><strong>Responsive Design</strong><br> Making websites look great on phones</li>
-            <li><strong>Git &amp; GitHub</strong><br> Managing projects using version control</li>
-        </ul>
-    </section>
-    <img src="it image 1.webp" alt="ICT field" width="200" height="200">
-    <img src="it image 2.webp" alt="computer science" width="200" height="200">
+            <h2>My Skills</h2>
+            <ul>
+                <li><strong>HTML &amp; CSS</strong><br> Building clean, semantic and responsive websites.</li>
+                <li><strong>Javascript</strong><br> Creating interactive web experiences.</li>
+                <li><strong>Responsive Design</strong><br> Making websites look great on phones.</li>
+                <li><strong>Git &amp; GitHub</strong><br> Managing projects using version control.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>My Projects</h2>
-        <h3>Business Website</h3>
-        <p>A website designed for my fellow students.</p>
+        <img src="it image 1.webp" alt="ICT field" width="200" height="200">
+        <img src="it image 2.webp" alt="computer science" width="200" height="200">
 
-        <h3>E-Commerce website</h3>
-        <p>An online shopping website for skin products</p>
+        <section id="card">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <h3>Business Website</h3>
+                    <p>A website designed for my fellow students.</p>
+                </div>
+                <div class="project-item">
+                    <h3>E-Commerce Website</h3>
+                    <p>An online shopping website for skin products.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Mobile App Design</h3>
+                    <p>A mobile application focused on easy accessibility.</p>
+                </div>
+            </div>
+        </section>
 
-        <h3>Mobile App Design</h3>
-        <p>A mobile application focused on easy accessibility</p>
-    </section>
-</main>
-<a href="https://github.com/leniaprecious/itml1131-portfolio">My GitHub profile</a>
-<a href="about.html">ABOUT ME</a>
-<table border="2">
-    <caption>THE TABLE FOR MY FAVORITE COURSE UNITS</caption>
-    <thead>
-        <tr>
-            <th>DISCRETE MATH</th>
-            <th>WEB DEVELOPMENT </th>
-            <th>INFORMATION SYSTEMS</th>
+        <table border="2">
+            <caption>THE TABLE FOR MY FAVORITE COURSE UNITS</caption>
+            <thead>
+                <tr>
+                    <th>DISCRETE MATH</th>
+                    <th>WEB DEVELOPMENT</th>
+                    <th>INFORMATION SYSTEMS</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <td>Teaches you math for computer science</td>
@@ -58,25 +71,39 @@ aA<!DOCTYPE html>
                     <td>Gives you knowledge of information systems</td>
                 </tr>
                 <tr>
-                    <td>Logic maths, Propoditions, predicates</td>
-                    <td>html, CSS, java script</td>
-                    <td>information systems</td>
+                    <td>Logic maths, propositions, predicates</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>Information systems</td>
                 </tr>
             </tbody>
-        </tr>
-    </thead>
-</table>
+        </table>
 
-    <footer>
-        <p>
-            Name: Precious Lenia
-            Location: Arua, Uganda
-            Email:leniapreciousariani@gmail.com
-        </p>
-        <p>&copy; 2026 Precious Lenia. All rights reserved.</p>
-    </footer>
+        <br>
+
+        <form action="/submit" method="POST">
+            <div>
+                <label for="name" id="name-label">NAME:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">EMAIL:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message" id="message-label">MESSAGE:</label>
+                <textarea id="message" name="message" placeholder="enter your message here" required></textarea>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+
+        <footer>
+            <p>
+                Name: Precious Lenia<br>
+                Location: Arua, Uganda<br>
+                Email: leniapreciousariani@gmail.com
+            </p>
+            <p>&copy; 2026 Precious Lenia. All rights reserved.</p>
+        </footer>
+    </main>
 </body>
 </html>
-    
-            
-        

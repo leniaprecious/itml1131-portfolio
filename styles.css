@@ -1,0 +1,32 @@
+
+* {
+    box-sizing:border-box
+    margin:  0;
+    padding:  0;
+    font-color::content
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(168, 163, 158);
+    font-size:larger;
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    font-size: larger;
+    letter-spacing: normal;
+}
+
+h2 {
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    letter-spacing: normal;
+}
+.card {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    background-color: brown;
+    margin-top: auto;
+}
